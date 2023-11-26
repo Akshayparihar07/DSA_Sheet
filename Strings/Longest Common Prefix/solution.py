@@ -11,3 +11,17 @@ class Solution:
                 return ans
             ans += f[i]
         return ans
+
+
+'''
+Alternate solution
+
+ans = ""
+for i in range(len(strs[0])):
+    for s in strs:
+        if i == len(s) or s[i] != strs[0][i]:
+            return ans
+    ans+=strs[0][i]
+
+return ans
+'''

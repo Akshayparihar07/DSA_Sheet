@@ -32,7 +32,7 @@ def minCoins(coins, amount, i, dp):
     return dp[i][amount]
 
 # Initialize a memoization table with -1 values.
-dp = [[-1]* (amount+1) for _ in range(n+1)]
+dp = [[-1]* (amount+1) for _ in range(n)]
 
 # Start with the last coin in the list (index n-1).
 i = n-1
